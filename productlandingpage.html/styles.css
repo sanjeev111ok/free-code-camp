@@ -1,0 +1,169 @@
+:root {
+  --back-color: hwb(0 100% 0%);
+}
+* {
+  margin: 0;
+}
+body {
+  background-color: palegoldenrod;
+}
+#header-img {
+  width: 60px;
+  object-fit: contain;
+}
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--back-color);
+  padding: 10px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(83, 79, 123);
+  padding: 0 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+span {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+#email-section {
+  margin-top: 100px;
+}
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(135, 108, 58);
+}
+#submit {
+  background-color: rgb(135, 108, 58);
+  color: white;
+  cursor: pointer;
+}
+i {
+  color: rgb(135, 108, 58);
+  margin-right: 30px;
+}
+#features {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.feature:nth-last-of-type(2) {
+  margin-left: -18%;
+}
+.feature p:nth-of-type(1) {
+  margin-top: 75px;
+  margin-right: 6px;
+}
+#video {
+  width: 100%;
+}
+.image1 {
+  background-image: url("https://helptoaid.org/wp-content/uploads/2018/06/5-kg-rice-packing-bag-500x500-1.jpg");
+}
+.image2 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2j9RPjgyFYR77krQwWr6SZ_uuSlrofPamoQ&s");
+}
+.image3 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cIEfyTvWfN8vYFOqlsmQr1cPSTwgZ0NLHQ&s");
+}
+.product-image {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid rgb(135, 108, 58);
+}
+.card {
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main-price {
+  margin-right: 20px;
+  font-size: 30px;
+  color: rgb(135, 108, 58);
+}
+.old-price {
+  text-decoration: line-through;
+  color: rgb(135, 108, 58);
+  font-size: 20px;
+}
+.name {
+  font-size: 25px;
+  font-weight: 700;
+}
+.content {
+  font-size: 18px;
+  color: rgb(69, 47, 47);
+  font-style: italic;
+}
+.add {
+  width: 100%;
+  background-color: rgb(135, 108, 58);
+  border: 1px solid rgb(135, 108, 58);
+  color: aliceblue;
+}
+@media only screen and (min-width: 600px) {
+  #nav-bar {
+    flex-direction: row;
+  }
+}
+@media only screen and (450px< width <600px) {
+  .card {
+    font-size: 0.85rem;
+  }
+  .product-image {
+    height: 400px;
+  }
+}
+@media only screen and (450px <= width) {
+  .card {
+    display: flex;
+    max-width: 525px;
+  }
+  .inner-card {
+    width: 200px;
+    padding: 20px;
+  }
+  .product-image {
+    width: 400px;
+    border-radius: 10px 0px 0px 10px;
+  }
+}
+.inner-card {
+  margin-top: 90px;
+  background-color: white;
+  padding-top: 100px;
+}
